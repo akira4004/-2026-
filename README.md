@@ -58,8 +58,9 @@ int main() {
 }
 ```
 Makefile
-Для компиляции всех программ.
 ```
+Для компиляции всех программ.
+
 makefile
 CC = gcc
 CFLAGS = -Wall
