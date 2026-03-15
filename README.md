@@ -2,8 +2,7 @@
 
 ## Программа 1 (p1.c)
 Выводит идентификатор текущего и родительского процесса.
-
-```c
+```
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/types.h>
@@ -13,10 +12,10 @@ int main() {
     printf("PPID: %d\n", getppid());
     return 0;
 }
-Программа 2 (p2.c)
+```
+## Программа 2 (p2.c)
 Создаёт копию процесса через fork().
-
-c
+```
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/wait.h>
@@ -35,10 +34,9 @@ int main() {
     wait(NULL);
     return 0;
 }
-Программа 3 (p3.c)
+## Программа 3 (p3.c)
 Создаёт процесс с новым кодом через exec().
-
-c
+```
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/wait.h>
